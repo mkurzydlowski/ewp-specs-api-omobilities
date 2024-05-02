@@ -517,15 +517,22 @@
                         </xs:documentation>
                     </xs:annotation>
                 </xs:element>
-                <xs:element name="nominee-isced-f-code" type="xs:string" minOccurs="0" maxOccurs="1">
+                <xs:element name="nominee-isced-f-code" minOccurs="0" maxOccurs="1">
                     <xs:annotation>
                         <xs:documentation>
                             The student is sent to the mobility as part of one of his study programmes.
                             This field contains the ISCED-F field of education code that is closest to the
                             subject this programme (or, as EUC put is, "closest to the degree to be awarded
                             to the student by the Sending Institution").
+
+                            Note: ISCED code MUST be four-digit.
                         </xs:documentation>
                     </xs:annotation>
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattern value="[0-9]{4}"/>
+                        </xs:restriction>
+                    </xs:simpleType>
                 </xs:element>
                 <xs:element name="nominee-language-skill" minOccurs="0" maxOccurs="unbounded">
                     <xs:annotation>
