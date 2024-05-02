@@ -29,8 +29,8 @@ Reminder on vocabulary
 ----------------------
 
 Keep in mind that definitions of "sending HEI" and "receiving HEI" come from
-the "mobility vocabulary", not the "HTTP vocabulary". In case of this
-particular API this means that:
+the "mobility vocabulary", not the "HTTP vocabulary". In the case of this
+particular API, this means that:
 
 * **sending HEI == responding HEI** (HEI which is sending the student == HEI
   which implements the API, *receives* the HTTP request, and responds to it),
@@ -114,12 +114,12 @@ Mobility and its nomination have two different sets of statuses sent via Outgoin
   
   `S <--ANY-- R`
 
-* S informs R via CNR about changed nomination.
+* S informs R via CNR about a changed nomination.
 * `S --CANCELLED--> R`
 
 **3.**
 
-* Nomination status is `VERIFIED` and student is about to leave for R.
+* Nomination status is `VERIFIED` and a student is about to leave for R.
 
   Initial state:
 
