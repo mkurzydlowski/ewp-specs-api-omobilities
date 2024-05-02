@@ -222,9 +222,7 @@
                             is "non-standard", and is not contained by any single academic term.
 
                             This information needs to be provided "from the start" (when a new nomination is
-                            created). It is different from the information provided in the
-                            `planned-arrival-date` and `planned-departure-date` elements (which may be
-                            provided at later date).
+                            created).
 
                             For more information, read this thread:
                             https://github.com/erasmus-without-paper/ewp-specs-types-academic-term/issues/2
@@ -371,22 +369,6 @@
                         <xs:documentation>
                             Student mobility activity attributes, such as the length of the activity,
                             study level, or the nature of the educational components.
-                        </xs:documentation>
-                    </xs:annotation>
-                </xs:element>
-                <xs:element name="planned-arrival-date" type="xs:date" minOccurs="0" maxOccurs="1">
-                    <xs:annotation>
-                        <xs:documentation>
-                            Planned start date of the mobility (when the student is supposed to arrive).
-                            This date is provided by the sending HEI before the mobility.
-                        </xs:documentation>
-                    </xs:annotation>
-                </xs:element>
-                <xs:element name="planned-departure-date" type="xs:date" minOccurs="0" maxOccurs="1">
-                    <xs:annotation>
-                        <xs:documentation>
-                            Planned end date of the mobility (when the student is supposed to leave).
-                            This date is provided by the sending HEI before the mobility.
                         </xs:documentation>
                     </xs:annotation>
                 </xs:element>

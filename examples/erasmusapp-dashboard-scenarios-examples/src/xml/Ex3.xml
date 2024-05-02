@@ -19,8 +19,6 @@
             <email>nalty@example_a.edu</email>
         </student>
         <status>cancelled</status>
-        <planned-arrival-date>2022-02-01</planned-arrival-date>
-        <planned-departure-date>2022-06-20</planned-departure-date>
         <eqf-level-studied-at-departure>7</eqf-level-studied-at-departure>
         <nominee-isced-f-code>0215</nominee-isced-f-code>
         <nominee-language-skill>
