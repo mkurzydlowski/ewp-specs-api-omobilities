@@ -31,9 +31,6 @@
             <citizenship>NO</citizenship>
             <gender>1</gender>
             <email>ivan@example.com</email>
-            <p:phone-number>
-                <p:e164>+4788888888</p:e164>
-            </p:phone-number>
         </student>
         <status>live</status>
         <activity-type>student-studies</activity-type>
