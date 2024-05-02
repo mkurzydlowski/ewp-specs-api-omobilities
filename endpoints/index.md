@@ -69,7 +69,7 @@ A datetime string in the [`xs:dateTime` format][xs-datetime], e.g.
 `2004-02-12T15:19:21+01:00`.
 
 If given, then the server SHOULD filter the returned mobility IDs to the ones
-which have been either created or modified after the given point in time.
+that have been either created or modified after the given point in time.
 
  * Servers MAY include mobilities which were *not* modified. For example, if
    the server only *suspects* that the mobility has been modified, then it is
