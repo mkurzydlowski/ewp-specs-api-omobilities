@@ -60,7 +60,7 @@ year.
 
 This parameter was added to allow the client to synchronize only a smaller
 subset of all mobilities more easily (because many clients don't want to store
-mobilities which have ended long ago).
+mobilities which ended long ago).
 
 
 ### `modified_since` (optional)
@@ -88,7 +88,7 @@ Only selected Outgoing Mobility objects should be accessible to the caller.
 Visibility of objects SHOULD be kept in sync with the visibility described in
 the `get` endpoint. That is:
 
- * Servers MUST publish IDs of every mobility which is accessible (to the same
+ * Servers MUST publish IDs of every mobility that is accessible (to the same
    caller) via the `get` endpoint.
 
  * Server MUST NOT publish IDs of objects which would NOT be accessible (to the
@@ -102,7 +102,7 @@ Handling of invalid parameters
 
  * General [error handling rules][error-handling] apply.
 
- * Note, that parameters are "AND-ed" together, but their values are "OR-ed".
+ * Note that parameters are "AND-ed" together, but their values are "OR-ed".
    This means that invalid or unknown values provided in `sending_hei_id` and
    `receiving_hei_id` parameters MUST be **allowed** (but **not ignored**) by
    the server.
