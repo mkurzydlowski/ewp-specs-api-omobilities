@@ -91,7 +91,7 @@ Handling of invalid parameters
    access to). If the requester doesn't have access to none of the requested
    `omobility_ids`, an empty HTTP 200 `<response>` element MUST be returned.
 
- * Note, that currently clients have no way of telling the difference between
+ * Note that currently clients have no way of telling the difference between
    "this mobility does not exist" and "it does exist, but I don't have access
    to read it". In both cases, the proper mobility element will simply be
    missing from the response.
