@@ -74,7 +74,7 @@
                     <xs:documentation>
                         A list of matching mobilities.
 
-                        Currently there's only type of mobility exposed by this API. More types MAY
+                        Currently, there's only one type of mobility exposed by this API. More types MAY
                         come in the future.
                     </xs:documentation>
                 </xs:annotation>
@@ -228,7 +228,7 @@
                             is "non-standard", and is not contained by any single academic term.
 
                             This information needs to be provided "from the start" (when a new nomination is
-                            created). It is different than the information provided in the
+                            created). It is different from the information provided in the
                             `planned-arrival-date` and `planned-departure-date` elements (which may be
                             provided at later date).
 
@@ -248,7 +248,7 @@
                                 year should be avoided if a semester is sufficient). See here:
                                 https://github.com/erasmus-without-paper/ewp-specs-api-omobilities/pull/30#discussion_r159843983
 
-                                Note, that sending and receiving HEIs MAY use different academic term
+                                Note that sending and receiving HEIs MAY use different academic term
                                 identifiers (e.g. "2010/2011-1/2" might be equal to "2010/2010-2/2"). This
                                 particular identifier is the term identifier at the *sending* HEI, not the
                                 receiving HEI.
