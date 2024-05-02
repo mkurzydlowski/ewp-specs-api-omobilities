@@ -29,19 +29,12 @@ Parameters MUST be provided in the regular `application/x-www-form-urlencoded`
 format.
 
 
-### `sending_hei_id` (required)
-
-SCHAC ID of the mobilities' owner HEI (in EWP, the *sending* HEI is always the
-mobility's "owner"). This parameter MUST be required by the server even if the
-server covers only a single institution.
-
-
 ### `omobility_id` (repeatable, required)
 
 A list of identifiers (no more than `<max-omobility-ids>` items) of mobilities
 which the client wants to retrieve information on. All of these mobilities
-should be the outgoing mobilities of the sending HEI provided in the
-`sending_hei_id` parameter (otherwise, they will be ignored).
+should be the outgoing mobilities of the sending HEI covered by the caller
+(otherwise, they will be ignored).
 
 This parameter is *repeatable*, so the request MAY contain multiple occurrences
 of it. The server is REQUIRED to process all of them.
