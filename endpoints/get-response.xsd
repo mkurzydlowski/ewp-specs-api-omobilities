@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xmlns:a="https://github.com/erasmus-without-paper/ewp-specs-types-address/tree/stable-v1"
     xmlns:p="https://github.com/erasmus-without-paper/ewp-specs-types-phonenumber/tree/stable-v1"
     xmlns:trm="https://github.com/erasmus-without-paper/ewp-specs-types-academic-term/tree/stable-v1"
     xmlns:ewp="https://github.com/erasmus-without-paper/ewp-specs-architecture/blob/stable-v1/common-types.xsd"
@@ -14,11 +13,6 @@
     <xs:import
         schemaLocation="https://raw.githubusercontent.com/erasmus-without-paper/ewp-specs-architecture/stable-v1/common-types.xsd"
         namespace="https://github.com/erasmus-without-paper/ewp-specs-architecture/blob/stable-v1/common-types.xsd"
-    />
-
-    <xs:import
-        schemaLocation="https://raw.githubusercontent.com/erasmus-without-paper/ewp-specs-types-address/stable-v1/schema.xsd"
-        namespace="https://github.com/erasmus-without-paper/ewp-specs-types-address/tree/stable-v1"
     />
 
     <xs:import
@@ -290,8 +284,7 @@
                         <xs:documentation>
                             The section describes the student who is being sent for this mobility. Immutable.
 
-                            These fields MAY change in time (e.g. after the student changes his name or
-                            address).
+                            These fields MAY change in time (e.g., after the student changes his name).
                         </xs:documentation>
                     </xs:annotation>
                     <xs:complexType>
@@ -353,21 +346,6 @@
                                 <xs:annotation>
                                     <xs:documentation>
                                         Email address at which student should be contacted.
-                                    </xs:documentation>
-                                </xs:annotation>
-                            </xs:element>
-                            <xs:element ref="a:street-address" minOccurs="0" maxOccurs="1">
-                                <xs:annotation>
-                                    <xs:documentation>
-                                        Optional street address of the person's home.
-                                    </xs:documentation>
-                                </xs:annotation>
-                            </xs:element>
-                            <xs:element ref="a:mailing-address" minOccurs="0" maxOccurs="1">
-                                <xs:annotation>
-                                    <xs:documentation>
-                                        The postal address of this person. (This is usually much more useful
-                                        than street address.)
                                     </xs:documentation>
                                 </xs:annotation>
                             </xs:element>
