@@ -47,7 +47,7 @@ This parameter is *repeatable*, so the request MAY contain multiple occurrences
 of it. The server is REQUIRED to process all of them.
 
 Server implementers provide their own chosen value of `<max-omobility-ids>` via
-their manifest entry (see [manifest-entry.xsd](manifest-entry.xsd)). Clients
+their manifest entry (see [manifest-entry.xsd](../manifest-entry.xsd)). Clients
 SHOULD parse this value (or assume it's equal to `1`).
 
 
