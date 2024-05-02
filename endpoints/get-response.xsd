@@ -339,7 +339,7 @@
                                     </xs:documentation>
                                 </xs:annotation>
                             </xs:element>
-                            <xs:element name="email" type="ewp:Email" minOccurs="0" maxOccurs="1">
+                            <xs:element name="email" type="ewp:Email" minOccurs="1" maxOccurs="1">
                                 <xs:annotation>
                                     <xs:documentation>
                                         Email address at which student should be contacted.
