@@ -371,26 +371,12 @@
                         </xs:documentation>
                     </xs:annotation>
                 </xs:element>
-                <xs:element name="eqf-level-studied-at-nomination" type="ewp:EqfLevel" minOccurs="0" maxOccurs="1">
+                <xs:element name="eqf-level-studied-at-departure" type="ewp:EqfLevel" minOccurs="1" maxOccurs="1">
                     <xs:annotation>
                         <xs:documentation>
                             The student is sent for the mobility as part of one of his study programmes.
-                            This field contains the student's EQF level on this programme *at the time of
-                            the nomination* (and it SHOULD NOT change in time, as opposed to the fields
-                            present in the `student` element).
-                        </xs:documentation>
-                    </xs:annotation>
-                </xs:element>
-                <xs:element name="eqf-level-studied-at-departure" type="ewp:EqfLevel" minOccurs="0" maxOccurs="1">
-                    <xs:annotation>
-                        <xs:documentation>
-                            This is similar to the `eqf-level-studied-at-nomination` element, but this time
-                            we are interested in the EQF level the student **will have** when the mobility
-                            actually begins (according to many IROs this is more important than the one the
-                            students has at the time of the nomination).
-
-                            Server implementers are encouraged to supply both values. If it is not
-                            possible, then at least one SHOULD be supplied.
+                            This field contains the EQF level the student **will have** when the mobility
+                            actually begins.
                         </xs:documentation>
                     </xs:annotation>
                 </xs:element>
