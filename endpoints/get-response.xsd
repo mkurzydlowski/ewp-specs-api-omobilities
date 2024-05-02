@@ -342,10 +342,10 @@
                                     </xs:documentation>
                                 </xs:annotation>
                             </xs:element>
-                            <xs:element name="gender" type="ewp:Gender" minOccurs="0" maxOccurs="1">
+                            <xs:element name="gender" type="ewp:Gender" minOccurs="1" maxOccurs="1">
                                 <xs:annotation>
                                     <xs:documentation>
-                                        Optional code of the gender.
+                                        Code of the gender.
                                     </xs:documentation>
                                 </xs:annotation>
                             </xs:element>

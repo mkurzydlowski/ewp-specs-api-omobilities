@@ -15,6 +15,7 @@
             <given-names>Nalty</given-names>
             <family-name>Patel</family-name>
             <global-id>urn:schac:personalUniqueCode:int:esi:example_a.edu:85525839</global-id>
+            <gender>1</gender>
             <email>nalty@example_a.edu</email>
         </student>
         <status>cancelled</status>
