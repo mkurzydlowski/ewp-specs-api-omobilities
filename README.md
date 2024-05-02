@@ -16,6 +16,15 @@ Currently, this API describes mobilities **of one type only** - *Student
 Mobilities for Studies*. More types MAY be added in the future.
 
 
+### Business requirements and processes
+
+
+[Business requirements and processes](resources/mandatory_business_requirements_nominations.pdf)
+document clarifies the requirements for the technical solutions
+developed under EWP and in the local implementation that should adequately support
+the business processes related to nominations at Higher Education Institutions.
+
+
 Reminder on vocabulary
 ----------------------
 
