@@ -411,32 +411,6 @@
                         </xs:restriction>
                     </xs:simpleType>
                 </xs:element>
-                <xs:element name="nominee-language-skill" minOccurs="0" maxOccurs="unbounded">
-                    <xs:annotation>
-                        <xs:documentation>
-                            List of the student's language skills *at the time of the nomination* (they
-                            SHOULD NOT change in time).
-                        </xs:documentation>
-                    </xs:annotation>
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="language" type="xs:language" minOccurs="1" maxOccurs="1">
-                                <xs:annotation>
-                                    <xs:documentation>
-                                        The BCP 47 code of the language.
-                                    </xs:documentation>
-                                </xs:annotation>
-                            </xs:element>
-                            <xs:element name="cefr-level" type="ewp:CefrLevel" minOccurs="0" maxOccurs="1">
-                                <xs:annotation>
-                                    <xs:documentation>
-                                        The level of language skill the student had.
-                                    </xs:documentation>
-                                </xs:annotation>
-                            </xs:element>
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
                 <xs:element name="additional-requirement" minOccurs="0" maxOccurs="unbounded">
                     <xs:annotation>
                         <xs:documentation>

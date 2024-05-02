@@ -37,18 +37,6 @@
         <eqf-level-studied-at-nomination>7</eqf-level-studied-at-nomination>
         <eqf-level-studied-at-departure>8</eqf-level-studied-at-departure>
         <nominee-isced-f-code>1234</nominee-isced-f-code>
-        <nominee-language-skill>
-            <language>no</language>
-            <cefr-level>C2</cefr-level>
-        </nominee-language-skill>
-        <nominee-language-skill>
-            <language>en</language>
-            <cefr-level>B2</cefr-level>
-        </nominee-language-skill>
-        <nominee-language-skill>
-            <language>pl</language>
-            <cefr-level>A1</cefr-level>
-        </nominee-language-skill>
         <additional-requirement>
             <name>Motivation letter</name>
             <file>f0f4934c-d384-41c3-a455-9bb9a689a5a3</file>

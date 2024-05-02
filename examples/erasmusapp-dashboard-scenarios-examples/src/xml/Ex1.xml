@@ -21,9 +21,5 @@
         <status>nomination</status>
         <eqf-level-studied-at-departure>7</eqf-level-studied-at-departure>
         <nominee-isced-f-code>0215</nominee-isced-f-code>
-        <nominee-language-skill>
-            <language>en</language>
-            <cefr-level>B2</cefr-level>
-        </nominee-language-skill>
     </student-mobility-for-studies>
 </omobilities-get-response>
