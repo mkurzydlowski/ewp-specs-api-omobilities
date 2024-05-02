@@ -324,7 +324,7 @@
                                     </xs:documentation>
                                 </xs:annotation>
                             </xs:element>
-                            <xs:element name="citizenship" type="ewp:CountryCode" minOccurs="0" maxOccurs="1">
+                            <xs:element name="nationality" type="ewp:CountryCode" minOccurs="0" maxOccurs="1">
                                 <xs:annotation>
                                     <xs:documentation>
                                         Code of the country to which the person belongs administratively and that
