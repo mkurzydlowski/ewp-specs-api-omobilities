@@ -148,14 +148,16 @@
                             <xs:element name="iia-id" type="ewp:AsciiPrintableIdentifier" minOccurs="0" maxOccurs="1">
                                 <xs:annotation>
                                     <xs:documentation>
-                                        Optional ID of the Institutional Agreement based on which the student is being
+                                        ID of the Institutional Agreement based on which the student is being
                                         nominated/sent.
 
                                         This ID should be provided by the server ONLY if it implements EWP's
                                         Interinstitutional Agreements API. Clients can fetch more information on this
-                                        agreement from IIAs API served on the sending HEI's servers (e.g. contact
+                                        agreement from IIAs API served on the sending HEI's servers (e.g., contact
                                         information to an appropriate IRO representative responsible for sending
                                         students for mobilities based on this IIA).
+
+                                        Note: If the agreement was digitally approved, this field MUST be provided.
                                     </xs:documentation>
                                 </xs:annotation>
                             </xs:element>
@@ -204,8 +206,10 @@
                                         student is being sent, then it outputs it here.
 
                                         Clients can fetch more information on this agreement from IIAs API served on
-                                        the *receiving HEI's* servers (e.g. contact information of the coordinator who
+                                        the *receiving HEI's* servers (e.g., contact information of the coordinator who
                                         will receive the students).
+
+                                        Note: If the agreement was digitally approved, this field MUST be provided.
                                     </xs:documentation>
                                 </xs:annotation>
                             </xs:element>
