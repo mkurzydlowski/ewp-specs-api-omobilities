@@ -21,6 +21,7 @@
             <email>nalty@example_a.edu</email>
         </student>
         <status>nomination</status>
+        <agreement-isced-f-code>0215</agreement-isced-f-code>
         <eqf-level-studied-at-departure>7</eqf-level-studied-at-departure>
         <nominee-isced-f-code>0215</nominee-isced-f-code>
     </student-mobility-for-studies>

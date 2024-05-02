@@ -371,6 +371,20 @@
                         </xs:documentation>
                     </xs:annotation>
                 </xs:element>
+                <xs:element name="agreement-isced-f-code" type="Isced" minOccurs="1" maxOccurs="1">
+                    <xs:annotation>
+                        <xs:documentation>
+                            The field of education of the agreement.
+                            This field must use the 4-digit code based on ISCED-F 2013 standards.
+                            It is strongly recommended to use codes included in the Beneficiary Module data dictionary.
+
+                            The sending HEI indicates the ISCED field of education
+                            of the agreement's cooperation condition they want to nominate the student on.
+                            This field was added to "connect" (in a technical or functional way)
+                            a nomination to an agreement on the receiving HEI's side.
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
                 <xs:element name="eqf-level-studied-at-departure" type="ewp:EqfLevel" minOccurs="1" maxOccurs="1">
                     <xs:annotation>
                         <xs:documentation>
@@ -380,7 +394,7 @@
                         </xs:documentation>
                     </xs:annotation>
                 </xs:element>
-                <xs:element name="nominee-isced-f-code" minOccurs="1" maxOccurs="1">
+                <xs:element name="nominee-isced-f-code" type="Isced" minOccurs="1" maxOccurs="1">
                     <xs:annotation>
                         <xs:documentation>
                             The student is sent to the mobility as part of one of his study programmes.
@@ -391,11 +405,6 @@
                             Note: ISCED code MUST be four-digit.
                         </xs:documentation>
                     </xs:annotation>
-                    <xs:simpleType>
-                        <xs:restriction base="xs:string">
-                            <xs:pattern value="[0-9]{4}"/>
-                        </xs:restriction>
-                    </xs:simpleType>
                 </xs:element>
                 <xs:element name="additional-requirement" minOccurs="0" maxOccurs="unbounded">
                     <xs:annotation>
@@ -527,6 +536,12 @@
                     </xs:documentation>
                 </xs:annotation>
             </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="Isced">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{4}"/>
         </xs:restriction>
     </xs:simpleType>
 
