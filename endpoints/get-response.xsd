@@ -317,10 +317,10 @@
                                     </xs:documentation>
                                 </xs:annotation>
                             </xs:element>
-                            <xs:element name="birth-date" type="xs:date" minOccurs="0" maxOccurs="1">
+                            <xs:element name="birth-date" type="xs:date" minOccurs="1" maxOccurs="1">
                                 <xs:annotation>
                                     <xs:documentation>
-                                        RECOMMENDED. Date of birth.
+                                        Date of birth.
                                     </xs:documentation>
                                 </xs:annotation>
                             </xs:element>
