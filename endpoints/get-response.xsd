@@ -448,6 +448,25 @@
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
+                <xs:element name="comment" type="xs:string" minOccurs="0" maxOccurs="1">
+                    <xs:annotation>
+                        <xs:documentation>
+                            An optional comment. It is RECOMMENDED for comments to be provided only when
+                            necessary. Some example comments:
+                            * Person X from your university has agreed to accept an additional student
+                              above the limit defined in the IIA terms of cooperation,
+                            * A student at our university has completed a three-year bachelor's degree
+                              and is in the first year of second-cycle studies.
+                              Since in your country the bachelor's degree is four years,
+                              the student should go to first-cycle studies.
+
+                            These comments MUST be visible only to the IRO members, not the students.
+
+                            It is left unspecified how servers should handle these comments - e.g.,
+                            they may store them along their mobilities, or they may forward them to specific persons, etc.
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
