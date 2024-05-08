@@ -244,7 +244,7 @@
                                 https://github.com/erasmus-without-paper/ewp-specs-api-omobilities/pull/30#discussion_r159843983
 
                                 Note that sending and receiving HEIs MAY use different academic term
-                                identifiers (e.g. "2010/2011-1/2" might be equal to "2010/2010-2/2"). This
+                                identifiers (e.g. "2022/2023-1/2" might be equal to "2022/2022-2/2"). This
                                 particular identifier is the term identifier at the *sending* HEI, not the
                                 receiving HEI.
                             </xs:documentation>
@@ -270,7 +270,7 @@
                             place).
 
                             Note, that sending and receiving HEIs MAY use different academic year
-                            identifiers (e.g. "2010/2011" vs. "2010/2010" or "2011/2011"). This
+                            identifiers (e.g. "2022/2023" vs. "2022/2022" or "2023/2023"). This
                             particular identifier is the year identifier at the *receiving* HEI, not the
                             sending HEI.
 
