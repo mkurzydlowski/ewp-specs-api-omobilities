@@ -492,7 +492,7 @@
                 <xs:annotation>
                     <xs:documentation>
                         The nomination has been accepted by the receiving HEI, and all initial
-                        formalities have been settled (i.e. a first LA version has been signed). This
+                        formalities have been settled (i.e., a first LA version has been signed). This
                         status doesn't usually change throughout the mobility.
 
                         While in this status, LA can still be modified (new revisions of it may be
@@ -503,19 +503,19 @@
             <xs:enumeration value="recognized">
                 <xs:annotation>
                     <xs:documentation>
-                        The student has returned from the mobility and all achievements have been
+                        The student has returned from the mobility, and all achievements have been
                         recognized as indicated on the `component-recognized` list.
 
-                        At this point, the mobility SHOULD become read-only. The latest revision of it
-                        SHOULD be approved by all parties (no subsequent draft revisions should exist).
+                        At this point, mobility SHOULD become read-only. The latest revision of it
+                        SHOULD be approved by all parties (no further draft revisions should exist).
                     </xs:documentation>
                 </xs:annotation>
             </xs:enumeration>
             <xs:enumeration value="cancelled">
                 <xs:annotation>
                     <xs:documentation>
-                        The nomination has been cancelled (either by the student, or by one of the
-                        partner HEIs).
+                        The nomination has been cancelled (either by the student, or by the
+                        partner HEI).
                     </xs:documentation>
                 </xs:annotation>
             </xs:enumeration>
