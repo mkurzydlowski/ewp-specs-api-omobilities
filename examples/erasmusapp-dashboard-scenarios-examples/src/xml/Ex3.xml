@@ -4,13 +4,15 @@
         <sending-hei>
             <hei-id>example_a.edu</hei-id>
             <ounit-id>1234</ounit-id>
-            <iia-id>dd87538e-49e3-44ae-844e-55ad1b819ce9</iia-id>
         </sending-hei>
         <receiving-hei>
             <hei-id>example_b.edu</hei-id>
             <ounit-id>5653486D98511E16E0530B501E0A4594</ounit-id>
-            <iia-id>549117543-498-2093-121212-c4</iia-id>
         </receiving-hei>
+        <iia-id-provided>
+            <sending-hei-iia-id>dd87538e-49e3-44ae-844e-55ad1b819ce9</sending-hei-iia-id>
+            <receiving-hei-iia-id>549117543-498-2093-121212-c4</receiving-hei-iia-id>
+        </iia-id-provided>
         <sending-academic-term-ewp-id>2022/2023-2/2</sending-academic-term-ewp-id>
         <receiving-academic-year-id>2022/2023</receiving-academic-year-id>
         <student>

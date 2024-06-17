@@ -145,22 +145,6 @@
                                     </xs:documentation>
                                 </xs:annotation>
                             </xs:element>
-                            <xs:element name="iia-id" type="ewp:AsciiPrintableIdentifier" minOccurs="0" maxOccurs="1">
-                                <xs:annotation>
-                                    <xs:documentation>
-                                        ID of the Institutional Agreement based on which the student is being
-                                        nominated/sent.
-
-                                        This ID should be provided by the server ONLY if it implements EWP's
-                                        Interinstitutional Agreements API. Clients can fetch more information on this
-                                        agreement from IIAs API served on the sending HEI's servers (e.g., contact
-                                        information to an appropriate IRO representative responsible for sending
-                                        students for mobilities based on this IIA).
-
-                                        Note: If the agreement was digitally approved, this field MUST be provided.
-                                    </xs:documentation>
-                                </xs:annotation>
-                            </xs:element>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
@@ -198,24 +182,56 @@
                                     </xs:documentation>
                                 </xs:annotation>
                             </xs:element>
-                            <xs:element name="iia-id" type="ewp:AsciiPrintableIdentifier" minOccurs="0" maxOccurs="1">
-                                <xs:annotation>
-                                    <xs:documentation>
-                                        Each IIA partner can assign an ID of its own to the same IIA. If the server is
-                                        aware of the *receiving HEI's* ID assigned to the IIA based on which the
-                                        student is being sent, then it outputs it here.
-
-                                        Clients can fetch more information on this agreement from IIAs API served on
-                                        the *receiving HEI's* servers (e.g., contact information of the coordinator who
-                                        will receive the students).
-
-                                        Note: If the agreement was digitally approved, this field MUST be provided.
-                                    </xs:documentation>
-                                </xs:annotation>
-                            </xs:element>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
+                <xs:choice minOccurs="1" maxOccurs="1">
+                    <xs:element name="iia-id-provided">
+                        <xs:annotation>
+                            <xs:documentation>
+                                If an EWP IIA exists and the server implements EWP's
+                                Interinstitutional Agreements API, this field MUST be provided.
+                            </xs:documentation>
+                        </xs:annotation>
+                        <xs:complexType>
+                            <xs:sequence>
+                                <xs:element name="sending-hei-iia-id" type="ewp:AsciiPrintableIdentifier" minOccurs="1" maxOccurs="1">
+                                    <xs:annotation>
+                                        <xs:documentation>
+                                            ID of the Institutional Agreement based on which the student is being
+                                            nominated/sent.
+
+                                            Clients can fetch more information on this
+                                            agreement from IIAs API served on the sending HEI's servers (e.g., contact
+                                            information to an appropriate IRO representative responsible for sending
+                                            students for mobilities based on this IIA).
+                                        </xs:documentation>
+                                    </xs:annotation>
+                                </xs:element>
+                                <xs:element name="receiving-hei-iia-id" type="ewp:AsciiPrintableIdentifier" minOccurs="1" maxOccurs="1">
+                                    <xs:annotation>
+                                        <xs:documentation>
+                                            *Receiving HEI's* ID assigned to the IIA based on which the
+                                            student is being sent.
+
+                                            Clients can fetch more information on this agreement from IIAs API served on
+                                            the *receiving HEI's* servers (e.g., contact information of the coordinator who
+                                            will receive the students).
+                                        </xs:documentation>
+                                    </xs:annotation>
+                                </xs:element>
+                            </xs:sequence>
+                        </xs:complexType>
+                    </xs:element>
+                    <xs:element name="iia-id-not-provided" type="ewp:Empty">
+                        <xs:annotation>
+                            <xs:documentation>
+                                If an EWP IIA does not exist or the server does not implement EWP's
+                                Interinstitutional Agreements API, this field MUST be provided.
+                            </xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:choice>
                 <xs:choice minOccurs="1" maxOccurs="1">
                     <xs:annotation>
                         <xs:documentation>
