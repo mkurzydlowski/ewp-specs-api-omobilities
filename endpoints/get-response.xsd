@@ -493,13 +493,6 @@
                     </xs:documentation>
                 </xs:annotation>
             </xs:enumeration>
-            <xs:enumeration value="student-traineeships">
-                <xs:annotation>
-                    <xs:documentation>
-                        Student Mobility for Traineeships (SMT).
-                    </xs:documentation>
-                </xs:annotation>
-            </xs:enumeration>
         </xs:restriction>
     </xs:simpleType>
 
